@@ -1,0 +1,92 @@
+/* light */
+
+:root {
+  --neutral-0: #ffffff;
+  --neutral-100: #fbfbfb;
+  --neutral-200: #f3f3f3;
+  --neutral-300: #ececec;
+  --neutral-400: #bfbfbf;
+  --neutral-500: #8c8c8c;
+  --neutral-600: #6c6c6c;
+  --neutral-700: #393939;
+  --neutral-800: #1c1c1c;
+  --neutral-900: #141414;
+
+  --primary-0: #fff4f4;
+  --primary-100: #ffcece;
+  --primary-200: #fca9a9;
+  --primary-300: #f25959;
+  --primary-400: #d51010;
+  --primary-500: #a60c0c;
+  --primary-600: #760909;
+  --primary-400-500: linear-gradient(180deg, #d51010 0%, #a60c0c 100%);
+
+  --base-white: #ffffff;
+  --base-100: #ffcece;
+  --base-300: #f25959;
+  --base-400: #d51010;
+  --base-500: #a60c0c;
+  --base-600: #6c6c6c;
+  --base-800: #262626;
+  --base-900: #141414;
+  --base-black: #000000;
+
+  --secondary-0: #f5f0ff;
+  --secondary-100: #eadfff;
+  --secondary-200: #d9c5ff;
+  --secondary-300: #b792ff;
+  --secondary-400: #742cff;
+  --secondary-500: #581bcc;
+
+  --shadow-base-default: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  --shadow-base-hover: 2px 8px 12px rgba(0, 0, 0, 0.25);
+  --shadow-sm-default: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-sm-hover: 2px 8px 12px rgba(0, 0, 0, 0.2);
+
+  --font-family-base: "Source Sans 3", sans-serif;
+
+  --font-h1: 32px/40px var(--font-family-base);
+  --font-h2: 24px/32px var(--font-family-base);
+  --font-h3: 18px/24px var(--font-family-base);
+
+  --font-body-lg: 18px/24px var(--font-family-base);
+  --font-body-md: 16px/24px var(--font-family-base);
+  --font-body-sm: 14px/20px var(--font-family-base);
+
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --transition-duration: 0.2s;
+}
+[data-theme="dark"] {
+  --neutral-0: #141414;
+  --neutral-100: #1c1c1c;
+  --neutral-200: #262626;
+  --neutral-300: #333333;
+  --neutral-400: #6c6c6c;
+  --neutral-500: #8c8c8c;
+  --neutral-600: #bfbfbf;
+  --neutral-700: #ececec;
+  --neutral-800: #fbfbfb;
+  --neutral-900: #ffffff;
+
+  --primary-0: #300b0b;
+  --primary-100: #461313;
+  --primary-200: #760909;
+  --primary-300: #a60c0c;
+  --primary-400: #d51010;
+  --primary-500: #f25959;
+
+  --secondary-0: #261c3c;
+  --secondary-100: #3d2a66;
+  --secondary-200: #5d38ae;
+  --secondary-300: #7d45ea;
+  --secondary-400: #9d6aff;
+  --secondary-500: #b792ff;
+
+  --shadow-base-default: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  --shadow-base-hover: 2px 8px 12px rgba(0, 0, 0, 0.8);
+  --shadow-sm-default: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  --shadow-sm-hover: 2px 8px 12px rgba(0, 0, 0, 0.6);
+}

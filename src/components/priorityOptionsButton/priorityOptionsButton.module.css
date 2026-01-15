@@ -1,0 +1,65 @@
+.priorityOption {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-radius: 8px;
+  transition-duration: var(--transition-duration);
+}
+*:focus-visible {
+  transition: outline 0s;
+}
+.priorityOption:focus-visible {
+  outline: 2px solid var(--neutral-900);
+  outline-offset: 2px;
+  box-shadow: var(--shadow-sm-hover);
+}
+.priorityOption:focus-visible.priority-1 {
+  background-color: var(--neutral-300);
+}
+.priorityOption:focus-visible.priority-2 {
+  background-color: var(--secondary-100);
+}
+.priorityOption:focus-visible.priority-3 {
+  background-color: var(--primary-100);
+}
+
+.priorityOption:hover {
+  box-shadow: var(--shadow-sm-hover);
+}
+
+.priorityOptionActive {
+  pointer-events: none;
+}
+.priorityOptionActive.priority-1 {
+  background-color: var(--neutral-200);
+  box-shadow: var(--shadow-sm-default);
+}
+.priorityOptionActive.priority-2 {
+  background-color: var(--secondary-0);
+  box-shadow: var(--shadow-sm-default);
+}
+.priorityOptionActive.priority-3 {
+  background-color: var(--primary-0);
+  box-shadow: var(--shadow-sm-default);
+}
+
+.priority-1 {
+  color: var(--neutral-600);
+}
+.priority-1:hover {
+  background-color: var(--neutral-300);
+}
+
+.priority-2 {
+  color: var(--secondary-400);
+}
+.priority-2:hover {
+  background-color: var(--secondary-100);
+}
+
+.priority-3 {
+  color: var(--primary-400);
+}
+.priority-3:hover {
+  background-color: var(--primary-100);
+}

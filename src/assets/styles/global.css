@@ -1,0 +1,50 @@
+@import "./variables.css";
+@import "./reset.css";
+
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("../fonts/SourceSans3-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("../fonts/SourceSans3-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("../fonts/SourceSans3-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  transition:
+    all var(--transition-duration),
+    height 0s;
+}
+body {
+  min-width: 1280px;
+  overflow-y: hidden;
+  color: var(--neutral-800);
+  transition: 0s;
+}
+
+h1 {
+  font: var(--font-weight-bold) var(--font-h1);
+}
+
+h2 {
+  font: var(--font-weight-bold) var(--font-h2);
+}
+
+h3 {
+  font: var(--font-weight-bold) var(--font-h3);
+}

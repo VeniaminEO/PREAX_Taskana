@@ -1,0 +1,13 @@
+.content {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 64px;
+  height: 100%;
+}
+.sidebarContainer {
+  position: relative;
+  width: 400px;
+  height: 100%;
+  flex-shrink: 0;
+  overflow: hidden;
+}

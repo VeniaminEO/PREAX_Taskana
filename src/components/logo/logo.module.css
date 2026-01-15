@@ -1,0 +1,13 @@
+.logo {
+  display: flex;
+  align-items: center;
+  width: 126px;
+  height: 40px;
+  transition: var(--transition-duration);
+}
+.logo:focus-visible {
+  box-shadow: var(--shadow-base-hover);
+  outline: 2px solid var(--base-white);
+  outline-offset: 6px;
+  border-radius: 4px;
+}

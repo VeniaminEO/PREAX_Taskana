@@ -1,0 +1,111 @@
+.tasksListSection {
+  padding: 24px;
+  height: 100%;
+}
+
+.taskContent {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.taskText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  text-align: center;
+  font: var(--font-weight-regular) var(--font-body-md);
+}
+.taskText > span {
+  font: var(--font-weight-regular) var(--font-body-lg);
+}
+.taskImg {
+  width: 463px;
+  height: 319px;
+}
+
+.taskList {
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+  padding: 4px 24px;
+}
+
+.taskItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 8px 8px 8px 16px;
+  gap: 16px;
+  border-radius: 8px;
+  overflow-wrap: break-word;
+  word-break: break-word;
+
+  transition-duration: var(--transition-duration);
+}
+.taskItem:focus-visible {
+  outline: 2px solid var(--neutral-900);
+  outline-offset: 2px;
+  background-color: var(--neutral-100);
+  box-shadow: var(--shadow-sm-default);
+}
+.taskItem:hover {
+  background-color: var(--neutral-100);
+  box-shadow: var(--shadow-sm-default);
+}
+.taskItemWrapper {
+  display: flex;
+  gap: 16px;
+  padding: 8px 0;
+}
+.taskTitle {
+  font: var(--font-weight-regular) var(--font-body-lg);
+}
+
+.priorityCheckBox {
+  width: 24px;
+  height: 24px;
+  padding: 2px;
+}
+
+.priorityBorder {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
+.priority-1 {
+  border: 1.5px solid var(--neutral-400);
+}
+.priorityCheckBox:hover .priority-1 {
+  border-color: var(--neutral-800);
+}
+.priorityCheckBox:focus-visible .priority-1 {
+  border-color: var(--neutral-800);
+  outline: 4px solid var(--neutral-400);
+}
+
+.priority-2 {
+  border: 1.5px solid var(--secondary-300);
+}
+.priorityCheckBox:hover .priority-2 {
+  border-color: var(--secondary-500);
+}
+.priorityCheckBox:focus-visible .priority-2 {
+  border-color: var(--secondary-500);
+  outline: 4px solid var(--secondary-100);
+}
+
+.priority-3 {
+  border: 1.5px solid var(--primary-300);
+}
+.priorityCheckBox:hover .priority-3 {
+  border-color: var(--primary-500);
+}
+.priorityCheckBox:focus-visible .priority-3 {
+  border-color: var(--primary-500);
+  outline: 4px solid var(--primary-100);
+}

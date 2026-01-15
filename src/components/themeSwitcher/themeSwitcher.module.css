@@ -1,0 +1,64 @@
+.themeSwitcher {
+  display: flex;
+  align-items: center;
+  background-color: var(--base-800);
+  box-shadow: var(--shadow-base-default);
+  border-radius: 8px;
+  padding: 4px;
+  transition: var(--transition-duration);
+}
+
+.themeSwitcherButton {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--base-600);
+  transition: var(--transition-duration);
+}
+.activeTheme {
+  position: absolute;
+  width: 32px;
+  height: 100%;
+  background-color: var(--primary-400);
+  border-radius: 4px;
+  z-index: 1;
+  box-shadow: var(--shadow-base-default);
+  transform: translateX(0);
+  transition-duration: var(--transition-duration);
+  transition-property: transform, background-color;
+}
+.move {
+  transform: translateX(calc(100% + 4px));
+}
+.iconWrapper {
+  position: relative;
+  z-index: 20;
+  padding: 4px;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-duration);
+}
+.activeButton {
+  color: var(--base-white);
+}
+
+.themeSwitcherButton:hover .activeTheme {
+  background-color: var(--base-white);
+}
+.themeSwitcherButton:hover .activeButton {
+  color: var(--base-black);
+}
+.themeSwitcherButton:focus-visible {
+  outline: 2px solid var(--base-white);
+  outline-offset: 6px;
+  border-radius: 4px;
+}
+.themeSwitcherButton:focus-visible .activeTheme {
+  background-color: var(--base-white);
+}
+.themeSwitcherButton:focus-visible .activeButton {
+  color: var(--base-black);
+}

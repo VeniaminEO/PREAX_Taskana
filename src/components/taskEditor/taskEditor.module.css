@@ -1,0 +1,139 @@
+.taskEditor {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 400px;
+  height: 100%;
+  background-color: var(--neutral-100);
+  border-left: 1px solid var(--neutral-300);
+  z-index: 1;
+  transition:
+    all var(--transition-duration),
+    transform 0.4s ease,
+    opacity 0.4s ease,
+    visibility 0.4s ease;
+  transform: translateX(100%);
+  opacity: 0;
+  visibility: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.scrollWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  overflow-y: auto;
+}
+.taskEditor.open {
+  visibility: visible;
+  transform: translateX(0%);
+  opacity: 1;
+}
+*:focus-visible {
+  transition: outline 0s;
+}
+.taskEditorHeader {
+  background-color: var(--neutral-100);
+  position: sticky;
+  top: 0;
+  padding: 24px;
+  padding-bottom: 18px;
+}
+.taskEditorTitle {
+  margin-bottom: 24px;
+  font: var(--font-weight-bold) var(--font-h1);
+}
+.taskInputTitle {
+  display: flex;
+
+  gap: 4px;
+  font: var(--font-weight-bold) var(--font-body-lg);
+  margin-bottom: 12px;
+}
+.star {
+  font: var(--font-weight-regular) var(--font-body-lg);
+  color: var(--primary-400);
+}
+.taskInputWrapper {
+  position: relative;
+}
+.taskInput {
+  background-color: var(--neutral-100);
+  color: var(--neutral-800);
+
+  width: 100%;
+  padding: 16px 36px 16px 16px;
+  border: 1px solid var(--neutral-400);
+  border-radius: 8px;
+  font: var(--font-weight-regular) var(--font-body-lg);
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.taskInput:hover {
+  border: 1px solid var(--neutral-600);
+}
+.taskInput:focus-visible {
+  outline: 2px solid var(--neutral-800);
+  border-color: transparent;
+  transition: outline 0s;
+}
+.taskInput::placeholder {
+  color: var(--neutral-600);
+  font: var(--font-weight-regular) var(--font-body-lg);
+}
+.clearButton {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: var(--neutral-500);
+}
+.clearButton:hover,
+.clearButton:focus-visible {
+  color: var(--neutral-800);
+}
+
+.taskEditorContent {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  gap: 24px;
+  padding-top: 4px;
+  flex-grow: 1;
+}
+.priorityWrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.priorityLabel {
+  color: var(--neutral-800);
+  font: var(--font-weight-bold) var(--font-body-lg);
+}
+.priorityOptions {
+  display: flex;
+  gap: 8px;
+}
+.taskEditorFooter {
+  background-color: var(--neutral-100);
+  position: sticky;
+  bottom: 0;
+
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 16px 24px;
+
+  border-top: 1px solid var(--neutral-300);
+}
+.taskEditorControlButton {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}

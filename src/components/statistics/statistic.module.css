@@ -1,0 +1,17 @@
+.statisticContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  height: 100%;
+  height: 300px;
+}
+.statisticContainer > * {
+  transition-duration: var(--transition-duration);
+}
+.statisticText {
+  width: 352px;
+  text-align: center;
+  font: var(--font-weight-regular) var(--font-body-md);
+}

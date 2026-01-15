@@ -1,0 +1,9 @@
+.incomingTasks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+  height: 100%;
+  background: var(--neutral-0);
+}
